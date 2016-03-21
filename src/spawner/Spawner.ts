@@ -1,9 +1,10 @@
-/// <reference path="../typings/node.d.ts" />
+/// <reference path="../../typings/main.d.ts" />
+/// <reference path = "../../typings/auto.d.ts" />
 
-import {spawn} from 'child_process'
+import {spawn} from 'child_process';
 import {EventEmitter} from 'events';
 
-export default class Spawn {
+export default class Spawner {
     static run(cmd: string, params: string) {
         let paramParts = params.match(/(("|').*?("|')|[^("|')\s]+)(?=\s*|\s*$)+/g) || <any>[];
 

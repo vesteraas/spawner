@@ -1,7 +1,7 @@
-var example = require('..');
+var spawner = require('..');
 var assert = require('assert');
 
-example.Spawn.run('echo', '"Hello world!"')
+spawner.Spawner.run('echo', '"Hello world!"')
     .on('stderr', function (data) {
         console.log(data);
     })
@@ -15,7 +15,7 @@ example.Spawn.run('echo', '"Hello world!"')
         assert.equal(0, code);
     });
 
-example.Spawn.run('ls', '/xyz')
+spawner.Spawner.run('ls', '/xyz')
     .on('stderr', function (data) {
         assert.equal('ls: /xyz: No such file or directory', data);
     })

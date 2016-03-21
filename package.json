@@ -1,12 +1,12 @@
 {
-  "name": "@wkv/spawner",
+  "name": "@vesteraas/spawner",
   "version": "0.0.1",
   "description": "Spawn",
-  "main": "dist/index.js",
+  "main": "dist/spawner.js",
   "scripts": {
     "preinstall": "npm install autodts",
     "postinstall": "autodts link",
-    "prepublish": "tsc && autodts generate",
+    "prepublish": "typings install && tsc && autodts generate",
     "test": "node test/test.js"
   },
   "author": "Werner Vesterås",
@@ -14,15 +14,16 @@
   "typescript": {
     "definition": "index.d.ts"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/vesteraas/spawner"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vesteraas/spawner"
   },
   "dependencies": {
     "autodts": "~0.0.6"
   },
   "devDependencies": {
     "@lib/autodts-generator": "~0.0.2",
-    "typescript": "~1.8.9"
+    "typescript": "~1.8.9",
+    "typings": "^0.7.9"
   }
 }
