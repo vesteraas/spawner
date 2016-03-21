@@ -1,6 +1,3 @@
-/// <reference path="../../typings/main.d.ts" />
-/// <reference path = "../../typings/auto.d.ts" />
-
 import {spawn} from 'child_process';
 import {EventEmitter} from 'events';
 

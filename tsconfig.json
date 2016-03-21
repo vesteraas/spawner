@@ -1,12 +1,16 @@
 {
-	"compilerOptions": {
-		"declaration": true,
-		"module": "CommonJS",
-		"target": "es5",
-		"noImplicitAny": true,
-		"outDir": "dist"
-	},
-	"files": [
-		"src/spawner.ts"
-	]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "lib/"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "src/Spawner.ts",
+    "typings/main.d.ts"
+  ]
 }
