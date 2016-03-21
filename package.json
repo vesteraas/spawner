@@ -5,8 +5,8 @@
   "main": "dist/spawner.js",
   "scripts": {
     "preinstall": "npm install autodts",
-    "postinstall": "autodts link",
-    "prepublish": "typings install && tsc && autodts generate",
+    "postinstall": "autodts link && typings install",
+    "prepublish": "tsc && autodts generate",
     "test": "node test/test.js"
   },
   "author": "Werner Vesterås",
