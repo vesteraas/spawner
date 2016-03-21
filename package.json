@@ -1,6 +1,6 @@
 {
   "name": "@vesteraas/spawner",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Spawner",
   "main": "./lib/Spawner.js",
   "typings": "./lib/Spawner.d.ts",
