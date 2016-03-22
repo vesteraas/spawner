@@ -1,6 +1,4 @@
 node_modules/
-lib/
-*.d.ts
 *.log
 *.tgz
 .idea
