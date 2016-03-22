@@ -11,9 +11,6 @@
   },
   "author": "Werner Vesterås",
   "license": "MIT",
-  "typescript": {
-    "definition": "index.d.ts"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/vesteraas/spawner"
